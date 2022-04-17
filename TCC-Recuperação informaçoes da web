@@ -1,0 +1,53 @@
+# Geração de geração contabilizar quantidade de horas que usuarios fica conectado nas aplicaçoes
+
+   derivative_estimate = partia(difference_quotient, square, h=0.00001)
+   import matplotlib.pyplot as plt 
+   x = range(-10,10)
+   plt.title("Resultados derivados reais e estimativas")
+   plt.plot(x, map(derivative, x), 'rx', label='Actual')
+   plt.plot(x, map(derivative_estimate, x), 'b+', label='Estimate')
+   plt.legend(loc=9)
+   plt.show()
+
+# Geração de grafico para saber quantidade de horas que usuários passa conectados em aplicações da web 
+   def covariance(x,y):
+   n = len(x)
+   return dot(de_mean(x), de_mean(y)) /(n - 1)
+   covariance(num_friend, daily_minutes)
+   
+# Geração de grafico para apresentação do data frame 
+   tabela <- table(mtcars$am, mtcars$cyl)
+   barplot(tabela, main = "Tipo data frame ",
+   xlab = "numero de usuários", col=c("blue", "red"),
+   legend = c("Publicação diaria", "Publicação mensal"), beside = TRUE)
+   plot(iris$Sepal.Length, iris$Sepal.Width, col=iris$Species, pch =
+       15, cex = iris$Sepal.Length*iris$Sepal.Width*0.1)
+
+# grafico sobre aumento de usuarios de internet definido por região
+
+   mentions = [africa, américa, estadosUnidos, ásiaePacifico, ComunidadeEstadoIndependente, europa]
+   years = [2005, 2010, 2013, 2017, 2019]
+   plt.bar([2005, 2010, 2013, 2017, 2019], mentions, 0,9)
+   plt.xticks(years)
+   plt.ylabel("#distribuição de 'usuários pelo mundo'") 
+
+# grafico sobre estrutura hierárquica de como foi desenvolvido esse cenário para análise de dados
+
+  # primeiramente foi selecionado a partição da entropia
+  
+  def partition_entropy(subsets):
+  total_count = sum(len(subset) for subset in subsets)
+  return sum(data_entropy(subset)* len (subset) / total_count
+              for subset in subset)
+			  
+  # Após esse efeito de resultados passei a classificar os mesmo trazendo o resultados juntamente com a probabilidades
+   
+  def class_probabilities(labels):
+       total_count = len(labels)
+	   return [count / total_count
+	   for count in counter(labels).values()]
+	   
+  def data_entropy(labeled_data):
+       labels = [label for _, label in labeled_data]
+	   probabilities = class_probabilities(labels)
+	   return entropy (probabilities)
